@@ -5,5 +5,5 @@ From tomcat:8-jre8
 MAINTAINER "akshitsanchala@gmail.com" 
 LABEL app=my-app
 #COPY target/*.war /usr/local/tomcat/webapps/myweb.war
-COPY ./webapp.war /usr/local/tomcat/webapps
+COPY ./*.war /usr/local/tomcat/webapps
 
