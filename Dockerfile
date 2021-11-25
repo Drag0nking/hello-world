@@ -3,5 +3,7 @@ From tomcat:8-jre8
 
 # Maintainer 
 MAINTAINER "akshitsanchala@gmail.com" 
-#COPY ./webapp.war /usr/local/tomcat/webapps
-COPY target/*.war /usr/local/tomcat/webapps/myweb.war
+LABEL app=my-app
+#COPY target/*.war /usr/local/tomcat/webapps/myweb.war
+COPY ./webapp.war /usr/local/tomcat/webapps/myweb.war
+
